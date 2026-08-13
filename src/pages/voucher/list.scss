@@ -1,0 +1,65 @@
+@use '../../styles/tokens.scss' as *;
+
+.voucher-list__count {
+  padding: 0 $sp-1 $sp-2;
+  font-size: $fs-xs;
+  color: $c-text-3;
+}
+
+.voucher-card {
+  background: $c-surface;
+  border-radius: $r-md;
+  box-shadow: $shadow-card;
+  padding: $sp-3;
+  margin-bottom: $sp-2;
+  /* 左侧色条:一眼分出凭证条目边界 */
+  border-left: 6px solid $c-primary;
+}
+
+.voucher-card__no {
+  font-size: $fs-md;
+  font-weight: 600;
+  color: $c-text;
+  letter-spacing: 1px;
+}
+
+.voucher-card__amount {
+  font-size: $fs-md;
+  font-weight: 700;
+  color: $c-primary;
+}
+
+.voucher-card__note {
+  margin-top: 6px;
+  font-size: $fs-sm;
+  color: $c-text-2;
+}
+
+.voucher-card__foot {
+  margin-top: $sp-2;
+  font-size: $fs-xs;
+  gap: $sp-2;
+}
+
+.voucher-list__end {
+  padding: $sp-4 0;
+  text-align: center;
+  font-size: $fs-xs;
+  color: $c-text-3;
+}
+
+.voucher-list__fab {
+  position: fixed;
+  right: $sp-4;
+  bottom: calc(#{$sp-5} + env(safe-area-inset-bottom));
+  width: 104px;
+  height: 104px;
+  border-radius: 50%;
+  background: $c-primary;
+  color: #fff;
+  font-size: 56px;
+  line-height: 100px;
+  text-align: center;
+  box-shadow: 0 10px 28px rgba(31, 111, 235, 0.42);
+  z-index: 20;
+}

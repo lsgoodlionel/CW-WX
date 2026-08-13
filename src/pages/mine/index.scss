@@ -1,0 +1,85 @@
+@use '../../styles/tokens.scss' as *;
+
+.mine {
+  min-height: 100vh;
+  padding-bottom: $sp-8;
+}
+
+.mine__profile {
+  display: flex;
+  align-items: center;
+  gap: $sp-3;
+  padding: $sp-5 $sp-4 $sp-6;
+  background: linear-gradient(140deg, #1f6feb 0%, #14428f 100%);
+  color: #fff;
+}
+
+.mine__avatar {
+  width: 104px;
+  height: 104px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+  border: 4px solid rgba(255, 255, 255, 0.35);
+  text-align: center;
+  line-height: 96px;
+  font-size: $fs-xl;
+  font-weight: 600;
+}
+
+.mine__name {
+  font-size: $fs-lg;
+  font-weight: 600;
+}
+
+.mine__roles {
+  display: block;
+  margin-top: 6px;
+  font-size: $fs-xs;
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.mine__body {
+  margin-top: -$sp-4;
+  padding: 0 $sp-3;
+}
+
+.mine__row {
+  display: flex;
+  align-items: center;
+  gap: $sp-2;
+  padding: $sp-3;
+  font-size: $fs-base;
+  color: $c-text;
+  border-bottom: 2px solid $c-border;
+}
+
+.mine__row:last-child {
+  border-bottom: none;
+}
+
+.mine__row-icon {
+  width: 44px;
+  font-size: 34px;
+  text-align: center;
+}
+
+.mine__row-value {
+  max-width: 300px;
+  font-size: $fs-xs;
+  color: $c-text-3;
+}
+
+.mine__row-arrow {
+  color: $c-text-3;
+  font-size: $fs-md;
+}
+
+.mine__footnote {
+  display: block;
+  margin: $sp-4 0;
+  text-align: center;
+  font-size: $fs-xs;
+  color: $c-text-3;
+  line-height: 1.8;
+  white-space: pre-line;
+}

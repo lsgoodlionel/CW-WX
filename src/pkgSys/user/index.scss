@@ -1,0 +1,20 @@
+@use '../../styles/tokens.scss' as *;
+
+.perm__module {
+  padding: $sp-2 0;
+  border-bottom: 2px solid $c-border;
+}
+
+.perm__module-name {
+  font-size: $fs-sm;
+  font-weight: 600;
+  color: $c-text;
+}
+
+.preset__hint {
+  display: block;
+  margin: $sp-3 $sp-1;
+  font-size: $fs-xs;
+  color: $c-text-3;
+  line-height: 1.7;
+}

@@ -1,0 +1,35 @@
+@use '../../styles/tokens.scss' as *;
+
+.exp-item {
+  padding: $sp-2 $sp-3;
+  margin-bottom: $sp-3;
+  background: $c-surface-2;
+  border: 2px solid $c-border;
+  border-radius: $r-md;
+}
+
+.exp-item__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: $sp-1;
+}
+
+.exp-item__no {
+  font-size: $fs-sm;
+  font-weight: 600;
+  color: $c-text-2;
+}
+
+.exp-item__foot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: $sp-2;
+}
+
+.exp-item__total {
+  font-size: $fs-md;
+  font-weight: 600;
+  color: $c-primary;
+}

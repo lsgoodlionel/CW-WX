@@ -1,0 +1,83 @@
+@use '../../styles/tokens.scss' as *;
+
+.login {
+  min-height: 100vh;
+  background: linear-gradient(160deg, #1f6feb 0%, #0b2a63 62%, #071a3f 100%);
+  padding: 200px $sp-5 $sp-8;
+}
+
+.login__hero {
+  padding: 0 $sp-2 $sp-6;
+}
+
+.login__brand {
+  display: block;
+  font-size: $fs-hero;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 2px;
+}
+
+.login__slogan {
+  display: block;
+  margin-top: $sp-2;
+  font-size: $fs-sm;
+  color: rgba(255, 255, 255, 0.72);
+  letter-spacing: 4px;
+}
+
+.login__card {
+  background: $c-surface;
+  border-radius: $r-lg;
+  padding: $sp-5 $sp-4 $sp-4;
+  box-shadow: 0 24px 60px rgba(4, 16, 42, 0.35);
+}
+
+.login__field {
+  margin-bottom: $sp-4;
+}
+
+.login__label {
+  display: block;
+  font-size: $fs-xs;
+  color: $c-text-3;
+  letter-spacing: 2px;
+  margin-bottom: $sp-1;
+}
+
+.login__input {
+  width: 100%;
+  height: 76px;
+  font-size: $fs-md;
+  border-bottom: 2px solid $c-border;
+}
+
+.login__hint {
+  display: block;
+  margin-top: $sp-1;
+  font-size: $fs-xs;
+  color: $c-text-3;
+}
+
+.login__links {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: $sp-3;
+}
+
+.login__tip {
+  display: block;
+  margin-top: $sp-3;
+  font-size: $fs-xs;
+  color: $c-text-3;
+  line-height: 1.6;
+}
+
+.login__footnote {
+  display: block;
+  margin-top: $sp-5;
+  text-align: center;
+  font-size: $fs-xs;
+  color: rgba(255, 255, 255, 0.5);
+  line-height: 1.7;
+}

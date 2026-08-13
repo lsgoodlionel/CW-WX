@@ -1,0 +1,69 @@
+@use '../../styles/tokens.scss' as *;
+
+.wf__alert-title {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.wf__alert-body {
+  display: block;
+  margin-top: 4px;
+  font-size: $fs-xs;
+  line-height: 1.7;
+}
+
+.wf__row {
+  padding: $sp-3;
+}
+
+.wf__name {
+  font-size: $fs-md;
+  font-weight: 600;
+}
+
+.wf__meta {
+  margin-top: 6px;
+  font-size: $fs-xs;
+}
+
+.wf__steps {
+  margin-top: $sp-2;
+  padding: $sp-2;
+  background: $c-surface-2;
+  border-radius: $r-sm;
+}
+
+.wf__step {
+  display: flex;
+  align-items: center;
+  gap: $sp-2;
+  padding: 6px 0;
+  font-size: $fs-sm;
+  color: $c-text-2;
+}
+
+.wf__step-no {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: $c-primary;
+  color: #fff;
+  font-size: $fs-xs;
+  text-align: center;
+  line-height: 36px;
+}
+
+.wf__edit-step {
+  padding: $sp-2 $sp-3;
+  margin-bottom: $sp-3;
+  background: $c-surface-2;
+  border: 2px solid $c-border;
+  border-radius: $r-md;
+}
+
+.wf__step-title {
+  font-size: $fs-sm;
+  font-weight: 600;
+  color: $c-text-2;
+}

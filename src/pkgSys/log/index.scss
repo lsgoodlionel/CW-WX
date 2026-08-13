@@ -1,0 +1,56 @@
+@use '../../styles/tokens.scss' as *;
+
+.log__count {
+  padding: 0 $sp-1 $sp-2;
+  font-size: $fs-xs;
+  color: $c-text-3;
+}
+
+.log__item {
+  background: $c-surface;
+  border-radius: $r-md;
+  box-shadow: $shadow-card;
+  padding: $sp-3;
+  margin-bottom: $sp-2;
+}
+
+.log__action {
+  font-size: $fs-base;
+  font-weight: 600;
+}
+
+.log__summary {
+  display: block;
+  margin-top: 6px;
+  font-size: $fs-sm;
+  color: $c-text-2;
+}
+
+.log__meta {
+  margin-top: $sp-2;
+  font-size: $fs-xs;
+  color: $c-text-3;
+}
+
+.log__detail {
+  margin-top: $sp-2;
+  padding: $sp-2;
+  background: $c-surface-2;
+  border-radius: $r-sm;
+  border: 2px solid $c-border;
+}
+
+.log__detail-text {
+  font-size: $fs-xs;
+  color: $c-text-2;
+  white-space: pre-wrap;
+  word-break: break-all;
+  font-family: 'SF Mono', Menlo, Consolas, monospace;
+}
+
+.log__end {
+  padding: $sp-4 0;
+  text-align: center;
+  font-size: $fs-xs;
+  color: $c-text-3;
+}

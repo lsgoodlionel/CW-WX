@@ -1,0 +1,10 @@
+node_modules/
+dist/
+lib/
+.temp/
+.rn_temp/
+.swc/
+.eslintcache
+*.log
+.DS_Store
+project.private.config.json

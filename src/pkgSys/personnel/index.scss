@@ -1,0 +1,33 @@
+@use '../../styles/tokens.scss' as *;
+
+.org__row {
+  display: flex;
+  align-items: center;
+  gap: $sp-2;
+  padding: $sp-2 $sp-3;
+  font-size: $fs-sm;
+  border-bottom: 2px solid $c-border;
+}
+
+.org__row:last-child {
+  border-bottom: none;
+}
+
+.org__row--active {
+  background: $c-primary-soft;
+  font-weight: 600;
+  color: $c-primary;
+}
+
+.org__filters {
+  padding: $sp-3;
+  border-bottom: 2px solid $c-border;
+}
+
+.org__position {
+  padding: $sp-2 $sp-3;
+  margin-bottom: $sp-3;
+  background: $c-surface-2;
+  border: 2px solid $c-border;
+  border-radius: $r-md;
+}

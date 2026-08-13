@@ -1,0 +1,80 @@
+/**
+ * 全局样式与设计令牌。
+ * 所有尺寸以 750 设计稿为基准书写 px,Taro pxtransform 会 1:1 转成 rpx。
+ */
+@use './styles/tokens.scss' as *;
+
+page {
+  background: $c-bg;
+  color: $c-text;
+  font-size: $fs-base;
+  font-family: -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Helvetica Neue', sans-serif;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+view,
+text,
+input,
+textarea,
+scroll-view {
+  box-sizing: border-box;
+}
+
+/* ---------- 通用排版 ---------- */
+.u-muted {
+  color: $c-text-3;
+}
+
+.u-num {
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: 'tnum';
+}
+
+.u-ellipsis {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.u-row {
+  display: flex;
+  align-items: center;
+}
+
+.u-row-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.u-gap-s {
+  gap: $sp-2;
+}
+
+.u-wrap {
+  flex-wrap: wrap;
+}
+
+.u-grow {
+  flex: 1;
+  min-width: 0;
+}
+
+/* ---------- 页面容器 ---------- */
+.page-body {
+  min-height: 100vh;
+  padding: $sp-3 $sp-3 $sp-8;
+}
+
+.page-scroll {
+  height: 100vh;
+}
+
+.section-title {
+  margin: $sp-4 $sp-1 $sp-2;
+  font-size: $fs-sm;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: $c-text-3;
+}

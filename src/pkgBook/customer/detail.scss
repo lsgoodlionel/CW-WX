@@ -1,0 +1,28 @@
+@use '../../styles/tokens.scss' as *;
+
+.cust-detail__name {
+  font-size: $fs-lg;
+  font-weight: 600;
+}
+
+.cust-detail__row {
+  display: flex;
+  gap: $sp-2;
+  padding: $sp-2 0;
+  border-bottom: 2px solid $c-border;
+  font-size: $fs-sm;
+}
+
+.cust-detail__row:last-child {
+  border-bottom: none;
+}
+
+.cust-detail__label {
+  flex: 0 0 190px;
+  color: $c-text-3;
+}
+
+.cust-detail__value {
+  color: $c-text;
+  word-break: break-all;
+}

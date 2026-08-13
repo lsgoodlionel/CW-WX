@@ -1,0 +1,144 @@
+@use '../../styles/tokens.scss' as *;
+
+.home {
+  min-height: 100vh;
+  padding-bottom: $sp-8;
+}
+
+/* 顶部资金面板:深色渐变 + 大字号,和下方浅色卡片形成明确层级 */
+.home__hero {
+  background: linear-gradient(140deg, #1f6feb 0%, #14428f 70%, #0d2f6b 100%);
+  padding: $sp-5 $sp-4 $sp-6;
+  color: #fff;
+}
+
+.home__hero-label {
+  display: block;
+  font-size: $fs-sm;
+  color: rgba(255, 255, 255, 0.72);
+  letter-spacing: 2px;
+}
+
+.home__hero-value {
+  display: block;
+  margin-top: $sp-1;
+  font-size: $fs-hero;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.home__hero-split {
+  display: flex;
+  margin-top: $sp-4;
+  padding-top: $sp-3;
+  border-top: 2px solid rgba(255, 255, 255, 0.18);
+}
+
+.home__hero-cell {
+  flex: 1;
+  min-width: 0;
+}
+
+.home__hero-cell-label {
+  display: block;
+  font-size: $fs-xs;
+  color: rgba(255, 255, 255, 0.62);
+}
+
+.home__hero-cell-value {
+  display: block;
+  margin-top: 4px;
+  font-size: $fs-base;
+  font-weight: 600;
+}
+
+.home__body {
+  margin-top: -$sp-4;
+  padding: 0 $sp-3;
+}
+
+.home__grid {
+  display: flex;
+  gap: $sp-2;
+  margin-bottom: $sp-3;
+}
+
+/* 运营概览 / 快捷入口:三列网格 */
+.home__ops {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.home__ops-cell,
+.home__shortcut {
+  width: 33.333%;
+  padding: $sp-3 $sp-2;
+  text-align: center;
+  border-right: 2px solid $c-border;
+  border-bottom: 2px solid $c-border;
+}
+
+.home__ops-cell:nth-child(3n),
+.home__shortcut:nth-child(3n) {
+  border-right: none;
+}
+
+.home__ops-value {
+  display: block;
+  font-size: $fs-xl;
+  font-weight: 600;
+  color: $c-text-3;
+}
+
+.home__ops-value--active {
+  color: $c-primary;
+}
+
+.home__ops-label {
+  display: block;
+  margin-top: 4px;
+  font-size: $fs-xs;
+  color: $c-text-3;
+}
+
+.home__shortcut-icon {
+  display: block;
+  font-size: 44px;
+  line-height: 1.2;
+}
+
+.home__shortcut-label {
+  display: block;
+  margin-top: $sp-1;
+  font-size: $fs-sm;
+  color: $c-text-2;
+}
+
+/* 支出构成 */
+.home__exp {
+  margin-bottom: $sp-3;
+}
+
+.home__exp-name {
+  font-size: $fs-sm;
+  color: $c-text-2;
+}
+
+.home__exp-value {
+  font-size: $fs-sm;
+  font-weight: 600;
+}
+
+.home__exp-track {
+  height: 14px;
+  margin-top: 6px;
+  background: $c-surface-2;
+  border-radius: $r-pill;
+  overflow: hidden;
+}
+
+.home__exp-fill {
+  height: 100%;
+  border-radius: $r-pill;
+  background: linear-gradient(90deg, #1f6feb, #7bb0ff);
+}

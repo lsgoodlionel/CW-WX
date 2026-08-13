@@ -1,0 +1,33 @@
+@use '../../styles/tokens.scss' as *;
+
+.approval__title {
+  font-size: $fs-lg;
+  font-weight: 600;
+  color: $c-text;
+}
+
+.approval__item {
+  padding: $sp-2;
+  margin-top: $sp-2;
+  background: $c-surface-2;
+  border-radius: $r-sm;
+  font-size: $fs-sm;
+  color: $c-text-2;
+}
+
+.approval__total {
+  margin-top: $sp-2;
+  padding: $sp-2;
+  border-top: 4px solid $c-border-strong;
+  font-size: $fs-md;
+  font-weight: 600;
+  color: $c-primary;
+}
+
+.approval__manage-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $sp-2;
+  margin-top: $sp-3;
+  padding-bottom: $sp-4;
+}

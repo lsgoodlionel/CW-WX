@@ -1,0 +1,55 @@
+@use '../../styles/tokens.scss' as *;
+
+.doc {
+  padding: $sp-3;
+}
+
+.doc__no {
+  font-size: $fs-md;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.doc__amount {
+  font-size: $fs-md;
+  font-weight: 700;
+  color: $c-primary;
+}
+
+.doc__reason {
+  display: block;
+  margin-top: 6px;
+  font-size: $fs-sm;
+  color: $c-text-2;
+}
+
+.doc__meta {
+  margin-top: $sp-2;
+  font-size: $fs-xs;
+  color: $c-text-3;
+}
+
+.doc__detail-reason {
+  display: block;
+  margin: $sp-2 0;
+  font-size: $fs-sm;
+  color: $c-text-2;
+}
+
+.doc__item {
+  padding: $sp-2;
+  margin-top: $sp-2;
+  background: $c-surface-2;
+  border-radius: $r-sm;
+  font-size: $fs-sm;
+  color: $c-text-2;
+}
+
+.doc__total {
+  margin-top: $sp-2;
+  padding: $sp-2;
+  border-top: 4px solid $c-border-strong;
+  font-size: $fs-md;
+  font-weight: 600;
+  color: $c-primary;
+}

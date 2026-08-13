@@ -1,0 +1,50 @@
+@use '../../styles/tokens.scss' as *;
+
+.entry {
+  padding: $sp-2 $sp-3;
+  margin-bottom: $sp-3;
+  background: $c-surface-2;
+  border: 2px solid $c-border;
+  border-radius: $r-md;
+}
+
+.entry__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: $sp-1;
+}
+
+.entry__no {
+  font-size: $fs-sm;
+  font-weight: 600;
+  color: $c-text-2;
+}
+
+.entry__sum {
+  padding: $sp-3;
+  background: $c-primary-soft;
+  border-radius: $r-md;
+  font-size: $fs-sm;
+  color: $c-text-2;
+}
+
+.entry__sum-value {
+  font-size: $fs-md;
+  font-weight: 700;
+  color: $c-primary;
+}
+
+.sub-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $sp-1;
+  padding: 0 0 $sp-2;
+}
+
+.voucher-edit__actions {
+  display: flex;
+  flex-direction: column;
+  gap: $sp-2;
+  margin-top: $sp-4;
+}

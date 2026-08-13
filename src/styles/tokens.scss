@@ -1,0 +1,55 @@
+/**
+ * 设计令牌:颜色 / 字号 / 间距 / 圆角 / 阴影。
+ * 尺寸基于 750 设计稿(1px = 1rpx)。
+ */
+
+// 主色与语义色
+$c-primary: #1f6feb;
+$c-primary-dark: #1552b8;
+$c-primary-soft: #eaf2ff;
+$c-success: #17936a;
+$c-success-soft: #e6f6f0;
+$c-warning: #c47f0a;
+$c-warning-soft: #fff4e0;
+$c-danger: #cf1322;
+$c-danger-soft: #fdecec;
+$c-purple: #6c4bd8;
+$c-purple-soft: #f0ebff;
+
+// 中性色
+$c-bg: #f2f4f7;
+$c-surface: #ffffff;
+$c-surface-2: #f7f9fc;
+$c-border: #e6eaf0;
+$c-border-strong: #d3dae4;
+$c-text: #1b2330;
+$c-text-2: #4a5568;
+$c-text-3: #8a94a6;
+
+// 字号
+$fs-xs: 20px;
+$fs-sm: 24px;
+$fs-base: 28px;
+$fs-md: 30px;
+$fs-lg: 34px;
+$fs-xl: 40px;
+$fs-hero: 56px;
+
+// 间距
+$sp-1: 8px;
+$sp-2: 16px;
+$sp-3: 24px;
+$sp-4: 32px;
+$sp-5: 40px;
+$sp-6: 48px;
+$sp-8: 64px;
+
+// 圆角
+$r-sm: 8px;
+$r-md: 16px;
+$r-lg: 24px;
+$r-pill: 999px;
+
+// 阴影
+$shadow-card: 0 4px 20px rgba(27, 35, 48, 0.06);
+$shadow-float: 0 8px 32px rgba(27, 35, 48, 0.16);

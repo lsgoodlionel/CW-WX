@@ -1,0 +1,25 @@
+@use '../../styles/tokens.scss' as *;
+
+.customer-card {
+  background: $c-surface;
+  border-radius: $r-md;
+  box-shadow: $shadow-card;
+  padding: $sp-3;
+  margin-bottom: $sp-2;
+}
+
+.customer-card__name {
+  font-size: $fs-base;
+  font-weight: 600;
+}
+
+.customer-card__meta {
+  margin-top: 6px;
+  font-size: $fs-xs;
+  color: $c-text-3;
+}
+
+.customer-card__foot {
+  margin-top: $sp-2;
+  font-size: $fs-xs;
+}

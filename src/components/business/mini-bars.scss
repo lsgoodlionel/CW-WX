@@ -1,0 +1,74 @@
+@use '../../styles/tokens.scss' as *;
+
+.bars__legend {
+  display: flex;
+  align-items: center;
+  gap: $sp-1;
+  margin-bottom: $sp-2;
+}
+
+.bars__dot {
+  width: 16px;
+  height: 16px;
+  border-radius: 4px;
+}
+
+.bars__dot--primary {
+  background: $c-primary;
+}
+
+.bars__dot--secondary {
+  background: $c-success;
+}
+
+.bars__legend-text {
+  font-size: $fs-xs;
+  color: $c-text-3;
+  margin-right: $sp-2;
+}
+
+.bars__row {
+  margin-bottom: $sp-3;
+}
+
+.bars__label {
+  font-size: $fs-sm;
+  color: $c-text-2;
+}
+
+.bars__value {
+  font-size: $fs-sm;
+  font-weight: 600;
+  color: $c-text;
+}
+
+.bars__sub {
+  font-size: $fs-xs;
+  color: $c-text-3;
+}
+
+.bars__track {
+  height: 14px;
+  margin: 6px 0;
+  background: $c-surface-2;
+  border-radius: $r-pill;
+  overflow: hidden;
+}
+
+.bars__fill {
+  height: 100%;
+  border-radius: $r-pill;
+  transition: width 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.bars__fill--primary {
+  background: linear-gradient(90deg, #1f6feb, #4a94ff);
+}
+
+.bars__fill--secondary {
+  background: linear-gradient(90deg, #17936a, #35c391);
+}
+
+.bars__fill--negative {
+  background: linear-gradient(90deg, #cf1322, #ef5350);
+}

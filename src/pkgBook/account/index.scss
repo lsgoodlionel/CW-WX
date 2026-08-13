@@ -1,0 +1,75 @@
+@use '../../styles/tokens.scss' as *;
+
+.account__tools {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $sp-2;
+  margin: $sp-3 0;
+}
+
+.account__card {
+  margin-bottom: $sp-2;
+}
+
+.account__row {
+  display: flex;
+  align-items: center;
+  gap: $sp-2;
+  padding: $sp-3;
+}
+
+.account__code {
+  font-size: $fs-sm;
+  color: $c-text-3;
+  margin-right: $sp-1;
+}
+
+.account__name {
+  font-size: $fs-base;
+  font-weight: 600;
+  margin-right: $sp-1;
+}
+
+.account__sub-count {
+  display: block;
+  margin-top: 4px;
+  font-size: $fs-xs;
+  color: $c-text-3;
+}
+
+.account__arrow {
+  color: $c-text-3;
+  font-size: $fs-md;
+}
+
+.account__subs {
+  background: $c-surface-2;
+  border-top: 2px solid $c-border;
+  padding: $sp-2 $sp-3;
+}
+
+.account__sub {
+  padding: $sp-2 0;
+  border-bottom: 2px solid $c-border;
+  font-size: $fs-sm;
+}
+
+.account__sub:last-of-type {
+  border-bottom: none;
+}
+
+.account__sub-code {
+  color: $c-text-3;
+  margin-right: $sp-1;
+}
+
+.account__sub-name {
+  color: $c-text;
+  margin-right: $sp-1;
+}
+
+.account__sub-actions {
+  display: flex;
+  gap: $sp-2;
+  padding-top: $sp-2;
+}
