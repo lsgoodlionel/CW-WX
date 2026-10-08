@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react'
 import Taro from '@tarojs/taro'
 import { View, Text } from '@tarojs/components'
-import type { Company } from '@/types/models'
 import { companyApi } from '@/services/api'
 import { apiUrl, getApiBase } from '@/services/env'
 import { uploadFile } from '@/services/request'
@@ -12,9 +11,25 @@ import { useAuth } from '@/hooks/useAuth'
 import { confirm, notify, success } from '@/utils/dialog'
 import { Alert, Button, Card, Loading, TextField } from '@/components/ui'
 
-type CompanyField = keyof Omit<Company, 'id'>
+type CompanyTextField =
+  | 'name'
+  | 'tax_number'
+  | 'legal_person'
+  | 'industry'
+  | 'establish_date'
+  | 'reg_address'
+  | 'phone'
+  | 'bank_name'
+  | 'bank_account'
+  | 'accounting_standard'
+  | 'currency'
+  | 'start_period'
+  | 'accountant'
+  | 'auditor'
+  | 'bookkeeper'
+  | 'recorder'
 
-const GROUPS: { title: string; fields: { key: CompanyField; label: string; required?: boolean; placeholder?: string }[] }[] = [
+const GROUPS: { title: string; fields: { key: CompanyTextField; label: string; required?: boolean; placeholder?: string }[] }[] = [
   {
     title: '工商登记',
     fields: [
@@ -48,7 +63,7 @@ const GROUPS: { title: string; fields: { key: CompanyField; label: string; requi
   },
 ]
 
-type FormState = Partial<Record<CompanyField, string>>
+type FormState = Partial<Record<CompanyTextField, string>>
 
 export default function CompanyPage() {
   const { user } = useAuth()

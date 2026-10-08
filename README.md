@@ -76,7 +76,7 @@ UI 未使用第三方组件库,`src/components/ui` 是一套自建的轻量组�
 | 本仓库 | lsgoodlionel/CW-WX | 微信小程序端 |
 
 共享的只有 `src/shared/` 这一层 —— 数据类型、枚举文案、权限判定、金额归一化。
-其中 `models.generated.ts` **由主仓库从后端 OpenAPI 自动生成**(102 个类型),
+其中 `models.generated.ts` **由主仓库从后端 OpenAPI 自动生成**(137 个类型),
 `src/types/models.ts`、`src/constants/labels.ts` 只是转出,页面照常引入即可。
 
 **这些文件随本仓库提交**,所以单独 clone 也能直接构建。
